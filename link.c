@@ -8,7 +8,7 @@ typedef struct list* node;
 node create(){
 node p =(node)malloc(sizeof(struct list));
 if(p==NULL){
-printf("\nno memory allocated,");
+printf("\no memory allocated,");
 return NULL;
 }return p;
 }
@@ -134,7 +134,7 @@ break;
 default:
 printf("\nEnd of program");
 }
-}while(ch==1||ch==2||ch==3||ch==4||ch==5||ch==6);
+}while(ch>0&&ch<7);
 return 0;
 }
 
