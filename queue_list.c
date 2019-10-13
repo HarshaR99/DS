@@ -15,10 +15,18 @@ exit(0);
 }}
 
 node insert(int ele,node head){
-node p=create();
+node p=create(),q=head;
 p->data=ele;
-p->next=head;
+if(head==NULL){
 head=p;
+head->next=NULL;  
+}
+else{
+while(q->next!=NULL)
+  q=q->next;
+  q->next=p;
+  p->next=NULL;
+}  
 return head;
 }
 
