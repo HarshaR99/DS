@@ -80,12 +80,3 @@ exit(0);
 }while(ch>0&&ch<4);
 return 0;
 }
-
-
-
-
-
-
-
-
-
