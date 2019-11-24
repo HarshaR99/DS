@@ -70,7 +70,6 @@ void display(NODE head){
 		return;
 	}
 	p = head;
-	printf("  ");
 	while(p != NULL){
 		printf("%d  ", p->data);
 		p = p->next;
@@ -80,7 +79,7 @@ void display(NODE head){
 NODE delete(NODE head, int ele){
     if(head == NULL){
         printf("Empty!\n");
-        return NULL;
+        return head;
     }
     NODE p = head;
     while(p->data != ele){
